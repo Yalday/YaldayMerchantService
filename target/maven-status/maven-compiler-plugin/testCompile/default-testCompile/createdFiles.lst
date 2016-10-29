@@ -1,0 +1,4 @@
+com/yalday/merchant/web/rest/MerchantResourceIntTest.class
+com/yalday/merchant/cucumber/stepdefs/StepDefs.class
+com/yalday/merchant/cucumber/CucumberTest.class
+com/yalday/merchant/web/rest/TestUtil.class
