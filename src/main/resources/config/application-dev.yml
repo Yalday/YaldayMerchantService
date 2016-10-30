@@ -35,8 +35,8 @@ spring:
         serialization.indent_output: true
     data:
         mongodb:
-            uri: mongodb://localhost:27017
-            database: yaldayMerchant
+            uri: mongodb://admin:admin@ds137207.mlab.com:37207/merchant
+            database: merchant
     mail:
         host: localhost
         port: 25
