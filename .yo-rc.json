@@ -1,0 +1,36 @@
+{
+  "generator-jhipster": {
+    "jhipsterVersion": "3.9.1",
+    "baseName": "YaldayMerchantService",
+    "packageName": "com.yalday.gateway",
+    "packageFolder": "com/yalday/gateway",
+    "serverPort": "8081",
+    "authenticationType": "jwt",
+    "hibernateCache": "no",
+    "clusteredHttpSession": false,
+    "websocket": false,
+    "databaseType": "mongodb",
+    "devDatabaseType": "mongodb",
+    "prodDatabaseType": "mongodb",
+    "searchEngine": false,
+    "messageBroker": false,
+    "serviceDiscoveryType": "eureka",
+    "buildTool": "maven",
+    "enableSocialSignIn": false,
+    "jwtSecretKey": "e2af63018001fbc83b4d04177cdda936b749613c",
+    "enableTranslation": true,
+    "applicationType": "microservice",
+    "testFrameworks": [
+      "gatling",
+      "cucumber"
+    ],
+    "jhiPrefix": "jhi",
+    "skipClient": true,
+    "skipUserManagement": true,
+    "nativeLanguage": "en",
+    "languages": [
+      "en",
+      "de"
+    ]
+  }
+}
