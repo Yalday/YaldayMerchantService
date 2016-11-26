@@ -1,4 +1,4 @@
-# yaldayMerchant
+# YaldayMerchantService
 
 This application was generated using JHipster 3.9.1, you can find documentation and help at [https://jhipster.github.io/documentation-archive/v3.9.1](https://jhipster.github.io/documentation-archive/v3.9.1).
 
@@ -17,7 +17,7 @@ For further instructions on how to develop with JHipster, have a look at [Using 
 
 ## Building for production
 
-To optimize the yaldayMerchant application for production, run:
+To optimize the YaldayMerchantService application for production, run:
 
     ./mvnw -Pprod clean package
 
@@ -33,6 +33,11 @@ Refer to [Using JHipster in production][] for more details.
 To launch your application's tests, run:
 
     ./mvnw clean test
+### Other tests
+
+Performance tests are run by [Gatling][] and written in Scala. They're located in `src/test/gatling` and can be run with:
+
+    ./mvnw gatling:execute
 
 For more information, refer to the [Running tests page][].
 
@@ -72,4 +77,4 @@ To set up a CI environment, consult the [Setting up Continuous Integration][] pa
 [Running tests page]: https://jhipster.github.io/documentation-archive/v3.9.1/running-tests/
 [Setting up Continuous Integration]: https://jhipster.github.io/documentation-archive/v3.9.1/setting-up-ci/
 
-
+[Gatling]: http://gatling.io/

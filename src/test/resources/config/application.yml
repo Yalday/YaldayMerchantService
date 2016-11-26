@@ -14,19 +14,19 @@ eureka:
     client:
         enabled: false
     instance:
-        appname: yaldayMerchant
-        instanceId: yaldayMerchant:${spring.application.instance_id:${random.value}}
+        appname: YaldayMerchantService
+        instanceId: YaldayMerchantService:${spring.application.instance_id:${random.value}}
 
 spring:
     application:
-        name: yaldayMerchant
+        name: YaldayMerchantService
     jackson:
         serialization.write_dates_as_timestamps: false
     data:
         mongodb:
-            host: mongodb://yaldayMerchant:yaldayMerchant@ds137207.mlab.com
-            port: 32707
-            database: merchant
+            host: localhost
+            port: 27117
+            database: YaldayMerchantService
     mail:
         host: localhost
     mvc:
@@ -58,14 +58,14 @@ jhipster:
     security:
         authentication:
             jwt:
-                secret: f10e22c631da3c241e23a3343fa2edafe5059330
+                secret: e2af63018001fbc83b4d04177cdda936b749613c
                 # Token is valid 24 hours
                 tokenValidityInSeconds: 86400
     metrics: # DropWizard Metrics configuration, used by MetricsConfiguration
         jmx.enabled: true
     swagger:
-        title: yaldayMerchant API
-        description: yaldayMerchant API documentation
+        title: YaldayMerchantService API
+        description: YaldayMerchantService API documentation
         version: 0.0.1
         termsOfServiceUrl:
         contactName:

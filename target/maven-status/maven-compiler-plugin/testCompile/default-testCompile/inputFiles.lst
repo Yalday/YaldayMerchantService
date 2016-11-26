@@ -1,4 +1,4 @@
-/Users/philquinn/Development/yalday/YaldayMerchantService/yalday-merchant/src/test/java/com/yalday/merchant/cucumber/CucumberTest.java
-/Users/philquinn/Development/yalday/YaldayMerchantService/yalday-merchant/src/test/java/com/yalday/merchant/web/rest/MerchantResourceIntTest.java
-/Users/philquinn/Development/yalday/YaldayMerchantService/yalday-merchant/src/test/java/com/yalday/merchant/cucumber/stepdefs/StepDefs.java
-/Users/philquinn/Development/yalday/YaldayMerchantService/yalday-merchant/src/test/java/com/yalday/merchant/web/rest/TestUtil.java
+/Users/clairebarton14/dev/code/YaldayMerchantService/src/test/java/com/yalday/merchant/web/rest/TestUtil.java
+/Users/clairebarton14/dev/code/YaldayMerchantService/src/test/java/com/yalday/merchant/cucumber/stepdefs/StepDefs.java
+/Users/clairebarton14/dev/code/YaldayMerchantService/src/test/java/com/yalday/merchant/web/rest/MerchantResourceIntTest.java
+/Users/clairebarton14/dev/code/YaldayMerchantService/src/test/java/com/yalday/merchant/cucumber/CucumberTest.java

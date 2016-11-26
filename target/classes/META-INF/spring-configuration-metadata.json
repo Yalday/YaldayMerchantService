@@ -6,10 +6,21 @@
       "type": "com.yalday.merchant.config.JHipsterProperties"
     },
     {
+      "name": "jhipster",
+      "sourceType": "com.yalday.gateway.config.JHipsterProperties",
+      "type": "com.yalday.gateway.config.JHipsterProperties"
+    },
+    {
       "name": "jhipster.async",
       "sourceMethod": "getAsync()",
       "sourceType": "com.yalday.merchant.config.JHipsterProperties",
       "type": "com.yalday.merchant.config.JHipsterProperties$Async"
+    },
+    {
+      "name": "jhipster.async",
+      "sourceMethod": "getAsync()",
+      "sourceType": "com.yalday.gateway.config.JHipsterProperties",
+      "type": "com.yalday.gateway.config.JHipsterProperties$Async"
     },
     {
       "name": "jhipster.cache",
@@ -18,16 +29,22 @@
       "type": "com.yalday.merchant.config.JHipsterProperties$Cache"
     },
     {
+      "name": "jhipster.cache",
+      "sourceMethod": "getCache()",
+      "sourceType": "com.yalday.gateway.config.JHipsterProperties",
+      "type": "com.yalday.gateway.config.JHipsterProperties$Cache"
+    },
+    {
       "name": "jhipster.http",
       "sourceMethod": "getHttp()",
       "sourceType": "com.yalday.merchant.config.JHipsterProperties",
       "type": "com.yalday.merchant.config.JHipsterProperties$Http"
     },
     {
-      "name": "jhipster.http.cache",
-      "sourceMethod": "getCache()",
-      "sourceType": "com.yalday.merchant.config.JHipsterProperties$Http",
-      "type": "com.yalday.merchant.config.JHipsterProperties$Http$Cache"
+      "name": "jhipster.http",
+      "sourceMethod": "getHttp()",
+      "sourceType": "com.yalday.gateway.config.JHipsterProperties",
+      "type": "com.yalday.gateway.config.JHipsterProperties$Http"
     },
     {
       "name": "jhipster.logging",
@@ -36,16 +53,10 @@
       "type": "com.yalday.merchant.config.JHipsterProperties$Logging"
     },
     {
-      "name": "jhipster.logging.logstash",
-      "sourceMethod": "getLogstash()",
-      "sourceType": "com.yalday.merchant.config.JHipsterProperties$Logging",
-      "type": "com.yalday.merchant.config.JHipsterProperties$Logging$Logstash"
-    },
-    {
-      "name": "jhipster.logging.spectator-metrics",
-      "sourceMethod": "getSpectatorMetrics()",
-      "sourceType": "com.yalday.merchant.config.JHipsterProperties$Logging",
-      "type": "com.yalday.merchant.config.JHipsterProperties$Logging$SpectatorMetrics"
+      "name": "jhipster.logging",
+      "sourceMethod": "getLogging()",
+      "sourceType": "com.yalday.gateway.config.JHipsterProperties",
+      "type": "com.yalday.gateway.config.JHipsterProperties$Logging"
     },
     {
       "name": "jhipster.mail",
@@ -54,34 +65,22 @@
       "type": "com.yalday.merchant.config.JHipsterProperties$Mail"
     },
     {
+      "name": "jhipster.mail",
+      "sourceMethod": "getMail()",
+      "sourceType": "com.yalday.gateway.config.JHipsterProperties",
+      "type": "com.yalday.gateway.config.JHipsterProperties$Mail"
+    },
+    {
       "name": "jhipster.metrics",
       "sourceMethod": "getMetrics()",
       "sourceType": "com.yalday.merchant.config.JHipsterProperties",
       "type": "com.yalday.merchant.config.JHipsterProperties$Metrics"
     },
     {
-      "name": "jhipster.metrics.graphite",
-      "sourceMethod": "getGraphite()",
-      "sourceType": "com.yalday.merchant.config.JHipsterProperties$Metrics",
-      "type": "com.yalday.merchant.config.JHipsterProperties$Metrics$Graphite"
-    },
-    {
-      "name": "jhipster.metrics.jmx",
-      "sourceMethod": "getJmx()",
-      "sourceType": "com.yalday.merchant.config.JHipsterProperties$Metrics",
-      "type": "com.yalday.merchant.config.JHipsterProperties$Metrics$Jmx"
-    },
-    {
-      "name": "jhipster.metrics.logs",
-      "sourceMethod": "getLogs()",
-      "sourceType": "com.yalday.merchant.config.JHipsterProperties$Metrics",
-      "type": "com.yalday.merchant.config.JHipsterProperties$Metrics$Logs"
-    },
-    {
-      "name": "jhipster.metrics.spark",
-      "sourceMethod": "getSpark()",
-      "sourceType": "com.yalday.merchant.config.JHipsterProperties$Metrics",
-      "type": "com.yalday.merchant.config.JHipsterProperties$Metrics$Spark"
+      "name": "jhipster.metrics",
+      "sourceMethod": "getMetrics()",
+      "sourceType": "com.yalday.gateway.config.JHipsterProperties",
+      "type": "com.yalday.gateway.config.JHipsterProperties$Metrics"
     },
     {
       "name": "jhipster.ribbon",
@@ -90,221 +89,36 @@
       "type": "com.yalday.merchant.config.JHipsterProperties$Ribbon"
     },
     {
+      "name": "jhipster.ribbon",
+      "sourceMethod": "getRibbon()",
+      "sourceType": "com.yalday.gateway.config.JHipsterProperties",
+      "type": "com.yalday.gateway.config.JHipsterProperties$Ribbon"
+    },
+    {
       "name": "jhipster.security",
       "sourceMethod": "getSecurity()",
       "sourceType": "com.yalday.merchant.config.JHipsterProperties",
       "type": "com.yalday.merchant.config.JHipsterProperties$Security"
     },
     {
-      "name": "jhipster.security.authentication",
-      "sourceMethod": "getAuthentication()",
-      "sourceType": "com.yalday.merchant.config.JHipsterProperties$Security",
-      "type": "com.yalday.merchant.config.JHipsterProperties$Security$Authentication"
-    },
-    {
-      "name": "jhipster.security.authentication.jwt",
-      "sourceMethod": "getJwt()",
-      "sourceType": "com.yalday.merchant.config.JHipsterProperties$Security$Authentication",
-      "type": "com.yalday.merchant.config.JHipsterProperties$Security$Authentication$Jwt"
+      "name": "jhipster.security",
+      "sourceMethod": "getSecurity()",
+      "sourceType": "com.yalday.gateway.config.JHipsterProperties",
+      "type": "com.yalday.gateway.config.JHipsterProperties$Security"
     },
     {
       "name": "jhipster.swagger",
       "sourceMethod": "getSwagger()",
       "sourceType": "com.yalday.merchant.config.JHipsterProperties",
       "type": "com.yalday.merchant.config.JHipsterProperties$Swagger"
+    },
+    {
+      "name": "jhipster.swagger",
+      "sourceMethod": "getSwagger()",
+      "sourceType": "com.yalday.gateway.config.JHipsterProperties",
+      "type": "com.yalday.gateway.config.JHipsterProperties$Swagger"
     }
   ],
   "hints": [],
-  "properties": [
-    {
-      "defaultValue": 2,
-      "name": "jhipster.async.core-pool-size",
-      "sourceType": "com.yalday.merchant.config.JHipsterProperties$Async",
-      "type": "java.lang.Integer"
-    },
-    {
-      "defaultValue": 50,
-      "name": "jhipster.async.max-pool-size",
-      "sourceType": "com.yalday.merchant.config.JHipsterProperties$Async",
-      "type": "java.lang.Integer"
-    },
-    {
-      "defaultValue": 10000,
-      "name": "jhipster.async.queue-capacity",
-      "sourceType": "com.yalday.merchant.config.JHipsterProperties$Async",
-      "type": "java.lang.Integer"
-    },
-    {
-      "defaultValue": 3600,
-      "name": "jhipster.cache.time-to-live-seconds",
-      "sourceType": "com.yalday.merchant.config.JHipsterProperties$Cache",
-      "type": "java.lang.Integer"
-    },
-    {
-      "defaultValue": 1461,
-      "name": "jhipster.http.cache.time-to-live-in-days",
-      "sourceType": "com.yalday.merchant.config.JHipsterProperties$Http$Cache",
-      "type": "java.lang.Integer"
-    },
-    {
-      "defaultValue": false,
-      "name": "jhipster.logging.logstash.enabled",
-      "sourceType": "com.yalday.merchant.config.JHipsterProperties$Logging$Logstash",
-      "type": "java.lang.Boolean"
-    },
-    {
-      "defaultValue": "localhost",
-      "name": "jhipster.logging.logstash.host",
-      "sourceType": "com.yalday.merchant.config.JHipsterProperties$Logging$Logstash",
-      "type": "java.lang.String"
-    },
-    {
-      "defaultValue": 5000,
-      "name": "jhipster.logging.logstash.port",
-      "sourceType": "com.yalday.merchant.config.JHipsterProperties$Logging$Logstash",
-      "type": "java.lang.Integer"
-    },
-    {
-      "defaultValue": 512,
-      "name": "jhipster.logging.logstash.queue-size",
-      "sourceType": "com.yalday.merchant.config.JHipsterProperties$Logging$Logstash",
-      "type": "java.lang.Integer"
-    },
-    {
-      "defaultValue": false,
-      "name": "jhipster.logging.spectator-metrics.enabled",
-      "sourceType": "com.yalday.merchant.config.JHipsterProperties$Logging$SpectatorMetrics",
-      "type": "java.lang.Boolean"
-    },
-    {
-      "defaultValue": "yaldayMerchant@localhost",
-      "name": "jhipster.mail.from",
-      "sourceType": "com.yalday.merchant.config.JHipsterProperties$Mail",
-      "type": "java.lang.String"
-    },
-    {
-      "defaultValue": false,
-      "name": "jhipster.metrics.graphite.enabled",
-      "sourceType": "com.yalday.merchant.config.JHipsterProperties$Metrics$Graphite",
-      "type": "java.lang.Boolean"
-    },
-    {
-      "defaultValue": "localhost",
-      "name": "jhipster.metrics.graphite.host",
-      "sourceType": "com.yalday.merchant.config.JHipsterProperties$Metrics$Graphite",
-      "type": "java.lang.String"
-    },
-    {
-      "defaultValue": 2003,
-      "name": "jhipster.metrics.graphite.port",
-      "sourceType": "com.yalday.merchant.config.JHipsterProperties$Metrics$Graphite",
-      "type": "java.lang.Integer"
-    },
-    {
-      "defaultValue": "yaldayMerchant",
-      "name": "jhipster.metrics.graphite.prefix",
-      "sourceType": "com.yalday.merchant.config.JHipsterProperties$Metrics$Graphite",
-      "type": "java.lang.String"
-    },
-    {
-      "defaultValue": true,
-      "name": "jhipster.metrics.jmx.enabled",
-      "sourceType": "com.yalday.merchant.config.JHipsterProperties$Metrics$Jmx",
-      "type": "java.lang.Boolean"
-    },
-    {
-      "defaultValue": false,
-      "name": "jhipster.metrics.logs.enabled",
-      "sourceType": "com.yalday.merchant.config.JHipsterProperties$Metrics$Logs",
-      "type": "java.lang.Boolean"
-    },
-    {
-      "defaultValue": false,
-      "name": "jhipster.metrics.spark.enabled",
-      "sourceType": "com.yalday.merchant.config.JHipsterProperties$Metrics$Spark",
-      "type": "java.lang.Boolean"
-    },
-    {
-      "defaultValue": "localhost",
-      "name": "jhipster.metrics.spark.host",
-      "sourceType": "com.yalday.merchant.config.JHipsterProperties$Metrics$Spark",
-      "type": "java.lang.String"
-    },
-    {
-      "defaultValue": 9999,
-      "name": "jhipster.metrics.spark.port",
-      "sourceType": "com.yalday.merchant.config.JHipsterProperties$Metrics$Spark",
-      "type": "java.lang.Integer"
-    },
-    {
-      "name": "jhipster.ribbon.display-on-active-profiles",
-      "sourceType": "com.yalday.merchant.config.JHipsterProperties$Ribbon",
-      "type": "java.lang.String[]"
-    },
-    {
-      "name": "jhipster.security.authentication.jwt.secret",
-      "sourceType": "com.yalday.merchant.config.JHipsterProperties$Security$Authentication$Jwt",
-      "type": "java.lang.String"
-    },
-    {
-      "defaultValue": 1800,
-      "name": "jhipster.security.authentication.jwt.token-validity-in-seconds",
-      "sourceType": "com.yalday.merchant.config.JHipsterProperties$Security$Authentication$Jwt",
-      "type": "java.lang.Long"
-    },
-    {
-      "defaultValue": 2592000,
-      "name": "jhipster.security.authentication.jwt.token-validity-in-seconds-for-remember-me",
-      "sourceType": "com.yalday.merchant.config.JHipsterProperties$Security$Authentication$Jwt",
-      "type": "java.lang.Long"
-    },
-    {
-      "name": "jhipster.swagger.contact-email",
-      "sourceType": "com.yalday.merchant.config.JHipsterProperties$Swagger",
-      "type": "java.lang.String"
-    },
-    {
-      "name": "jhipster.swagger.contact-name",
-      "sourceType": "com.yalday.merchant.config.JHipsterProperties$Swagger",
-      "type": "java.lang.String"
-    },
-    {
-      "name": "jhipster.swagger.contact-url",
-      "sourceType": "com.yalday.merchant.config.JHipsterProperties$Swagger",
-      "type": "java.lang.String"
-    },
-    {
-      "defaultValue": "yaldayMerchant API documentation",
-      "name": "jhipster.swagger.description",
-      "sourceType": "com.yalday.merchant.config.JHipsterProperties$Swagger",
-      "type": "java.lang.String"
-    },
-    {
-      "name": "jhipster.swagger.license",
-      "sourceType": "com.yalday.merchant.config.JHipsterProperties$Swagger",
-      "type": "java.lang.String"
-    },
-    {
-      "name": "jhipster.swagger.license-url",
-      "sourceType": "com.yalday.merchant.config.JHipsterProperties$Swagger",
-      "type": "java.lang.String"
-    },
-    {
-      "name": "jhipster.swagger.terms-of-service-url",
-      "sourceType": "com.yalday.merchant.config.JHipsterProperties$Swagger",
-      "type": "java.lang.String"
-    },
-    {
-      "defaultValue": "yaldayMerchant API",
-      "name": "jhipster.swagger.title",
-      "sourceType": "com.yalday.merchant.config.JHipsterProperties$Swagger",
-      "type": "java.lang.String"
-    },
-    {
-      "defaultValue": "0.0.1",
-      "name": "jhipster.swagger.version",
-      "sourceType": "com.yalday.merchant.config.JHipsterProperties$Swagger",
-      "type": "java.lang.String"
-    }
-  ]
+  "properties": []
 }

@@ -35,8 +35,8 @@ spring:
         serialization.indent_output: true
     data:
         mongodb:
-            uri: mongodb://admin:admin@ds137207.mlab.com:37207/merchant
-            database: merchant
+            uri: mongodb://localhost:27017
+            database: YaldayMerchantService
     mail:
         host: localhost
         port: 25
@@ -62,7 +62,7 @@ jhipster:
                 # Token is valid 24 hours
                 tokenValidityInSeconds: 86400
     mail: # specific JHipster mail property, for standard properties see MailProperties
-        from: yaldayMerchant@localhost
+        from: YaldayMerchantService@localhost
     metrics: # DropWizard Metrics configuration, used by MetricsConfiguration
         jmx.enabled: true
         spark:
@@ -73,7 +73,7 @@ jhipster:
             enabled: false
             host: localhost
             port: 2003
-            prefix: yaldayMerchant
+            prefix: YaldayMerchantService
         logs: # Reports Dropwizard metrics in the logs
             enabled: false
             reportFrequency: 60 # in seconds
