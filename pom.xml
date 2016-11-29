@@ -9,7 +9,7 @@
         <relativePath/>
     </parent>
 
-    <groupId>com.yalday.gateway</groupId>
+    <groupId>com.yalday.merchant</groupId>
     <artifactId>yalday-merchant-service</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>war</packaging>

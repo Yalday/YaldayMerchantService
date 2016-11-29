@@ -19,7 +19,7 @@ import java.util.List;
 public class MerchantServiceImpl implements MerchantService{
 
     private final Logger log = LoggerFactory.getLogger(MerchantServiceImpl.class);
-    
+
     @Inject
     private MerchantRepository merchantRepository;
 
@@ -37,7 +37,7 @@ public class MerchantServiceImpl implements MerchantService{
 
     /**
      *  Get all the merchants.
-     *  
+     *
      *  @param pageable the pagination information
      *  @return the list of entities
      */
@@ -56,6 +56,12 @@ public class MerchantServiceImpl implements MerchantService{
     public Merchant findOne(String id) {
         log.debug("Request to get Merchant : {}", id);
         Merchant merchant = merchantRepository.findOne(id);
+        return merchant;
+    }
+
+    public Merchant findByName(String name){
+        log.debug("Request to get Merchant : {}", name);
+        Merchant merchant = merchantRepository.findByName(name);
         return merchant;
     }
 

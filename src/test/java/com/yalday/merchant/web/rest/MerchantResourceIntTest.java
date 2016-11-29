@@ -136,6 +136,20 @@ public class MerchantResourceIntTest {
     }
 
     @Test
+    public void getMerchantByName() throws Exception {
+        // Initialize the database
+        merchantRepository.save(merchant);
+
+        // Get the merchant
+        restMerchantMockMvc.perform(get("/api/merchants/name/{name}", merchant.getName()))
+            .andExpect(status().isOk())
+            .andExpect(content().contentType(MediaType.APPLICATION_JSON_UTF8_VALUE))
+            .andExpect(jsonPath("$.id").value(merchant.getId()))
+            .andExpect(jsonPath("$.name").value(merchant.getName()))
+            .andExpect(jsonPath("$.description").value(DEFAULT_DESCRIPTION.toString()));
+    }
+
+    @Test
     public void getNonExistingMerchant() throws Exception {
         // Get the merchant
         restMerchantMockMvc.perform(get("/api/merchants/{id}", Long.MAX_VALUE))

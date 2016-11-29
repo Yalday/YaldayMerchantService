@@ -21,7 +21,7 @@ public interface MerchantService {
 
     /**
      *  Get all the merchants.
-     *  
+     *
      *  @param pageable the pagination information
      *  @return the list of entities
      */
@@ -34,6 +34,14 @@ public interface MerchantService {
      *  @return the entity
      */
     Merchant findOne(String id);
+
+    /**
+     *  Get the "name" merchant.
+     *
+     *  @param name the id of the entity
+     *  @return the entity
+     */
+    Merchant findByName(String name);
 
     /**
      *  Delete the "id" merchant.

@@ -29,7 +29,7 @@ import java.util.Optional;
 public class MerchantResource {
 
     private final Logger log = LoggerFactory.getLogger(MerchantResource.class);
-        
+
     @Inject
     private MerchantService merchantService;
 
@@ -111,6 +111,26 @@ public class MerchantResource {
     public ResponseEntity<Merchant> getMerchant(@PathVariable String id) {
         log.debug("REST request to get Merchant : {}", id);
         Merchant merchant = merchantService.findOne(id);
+        return Optional.ofNullable(merchant)
+            .map(result -> new ResponseEntity<>(
+                result,
+                HttpStatus.OK))
+            .orElse(new ResponseEntity<>(HttpStatus.NOT_FOUND));
+    }
+
+    /**
+     * GET  /merchants/:name : get the "name" merchant.
+     *
+     * @param name the name of the merchant to retrieve
+     * @return the ResponseEntity with status 200 (OK) and with body the merchant, or with status 404 (Not Found)
+     */
+    @RequestMapping(value = "/merchants/name/{name}",
+        method = RequestMethod.GET,
+        produces = MediaType.APPLICATION_JSON_VALUE)
+    @Timed
+    public ResponseEntity<Merchant> getMerchantByName(@PathVariable String name) {
+        log.debug("REST request to get Merchant : {}", name);
+        Merchant merchant = merchantService.findByName(name);
         return Optional.ofNullable(merchant)
             .map(result -> new ResponseEntity<>(
                 result,

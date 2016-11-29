@@ -10,4 +10,6 @@ import org.springframework.data.mongodb.repository.MongoRepository;
 @SuppressWarnings("unused")
 public interface MerchantRepository extends MongoRepository<Merchant,String> {
 
+    Merchant findByName(String name);
+
 }
